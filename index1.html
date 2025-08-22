@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student ID Card QR Generator</title>
+    <link rel="stylesheet" href="styles1.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Student ID Card QR Generator</h1>
+        <div class="form-group">
+            <input type="text" id="studentName" placeholder="Student Name" required>
+            <input type="text" id="studentID" placeholder="Student ID" required>
+            <input type="text" id="course" placeholder="Course" required>
+            <input type="text" id="year" placeholder="Year" required>
+            <button id="generateBtn">Generate ID Card</button>
+        </div>
+        <div id="idCard" class="id-card">
+            <h2>Student ID Card</h2>
+            <p><strong>NAME :</strong> <span id="nameDisplay"></span></p>
+            <p><strong>ID :</strong> <span id="idDisplay"></span></p>
+            <p><strong>COURSE :</strong> <span id="courseDisplay"></span></p>
+            <p><strong>YEAR :</strong> <span id="yearDisplay"></span></p>
+            <canvas id="qrCanvas" class="qr-canvas"></canvas>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
